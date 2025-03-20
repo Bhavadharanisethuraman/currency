@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h2>Currency to INR Converter (Without API)</h2>
+    <form method="POST">
+        <label for="from_currency">Enter Currency Code (e.g., USD, EUR, GBP):</label>
+        <input type="text" id="from_currency" name="from_currency" required>
+        <button type="submit">Convert</button>
+    </form>
+    {% if result %}
+        <h3>{{ result }}</h3>
+    {% endif %}
+</body>
+</html>
